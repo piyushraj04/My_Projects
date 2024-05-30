@@ -48,7 +48,13 @@ button {
     display: flex;
     align-items: center;
 }
+#signup>a,#favorite>a,#cart>a{
+    color: white;
+    /* border: none;     */
+    /* width: 30px; */
+    /* border: 2px solid red; */
 
+}
 #search>input {
     width: 500px;
     height: 40px;
@@ -168,6 +174,7 @@ p {
     justify-content: space-between;
     position: relative;
     top: -310px;
+    
 }
 
 .about ul {
@@ -177,6 +184,7 @@ p {
 
 .about ul a {
     color: black;
+    text-decoration: none;
 }
 
 footer {
@@ -197,4 +205,115 @@ footer {
 
 #flags img {
     width: 20px;
+}
+
+/* hide items in laptop */
+#tablet{
+    display: none;
+}
+#about_tablet{
+    display: none;
+}
+
+/* For Tablet */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  #hide{
+      display: none;
+    }
+    #about_tablet{
+        display: block;
+        justify-content: flex-start;
+        position: relative;
+        top: -320px;
+    }
+    #about_tablet>ul{
+   
+    }
+    #about_tablet>ul>div:first-child>a{
+        color: black;
+    }
+    #flags{
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+#inner_img2{
+    width: 600px;
+}
+    #logos{
+        /* justify-content: space-around; */
+        display: flex;
+        justify-content: space-around;
+        /* width: fit-content;   */
+        /* border: 2px solid red; */
+        padding-left: 0px;
+    }
+    #inner_btn>button:first-child {
+        left:130px;
+    }
+    #inner_btn>button:last-child{
+        left: 190px;
+    }
+    #inner_img>p:first-child{
+        left: -80px;
+    }
+    #inner_img>p:last-child{
+        left: -70px;
+    }
+    #tablet{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #2d2d2d;
+        color: white;
+        /* height: 50px; */
+    }
+    #tablet span{
+        color: black;
+        font-weight: 290;
+        font-size: 30px;
+        width: 30px;
+        color: white;
+        padding-right: 5px;
+        /* gap: 215px; */
+    }
+#tablet>h3{
+    font-size: 40px;
+    /* border: 2px solid green; */
+}
+#tablet>#search>span{
+    /* border: 15px solid blue; */
+    color: black;
+    /* height: 20px; */
+    position: relative;
+    top: 0px;
+    left: -30px;
+}
+    #content>img{
+        width:700px;
+        height: 600px;
+    }
+    /* hidden */
+    header{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+}
+
+
+
+/* for mobile phone */
+
+
+@media screen and (min-width:200px) and (max-width:764px){
+    /* hidden */
+    header{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
 }
