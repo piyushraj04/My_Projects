@@ -48,13 +48,17 @@ button {
     display: flex;
     align-items: center;
 }
-#signup>a,#favorite>a,#cart>a{
+
+#signup>a,
+#favorite>a,
+#cart>a {
     color: white;
     /* border: none;     */
     /* width: 30px; */
     /* border: 2px solid red; */
 
 }
+
 #search>input {
     width: 500px;
     height: 40px;
@@ -174,7 +178,7 @@ p {
     justify-content: space-between;
     position: relative;
     top: -310px;
-    
+
 }
 
 .about ul {
@@ -208,40 +212,85 @@ footer {
 }
 
 /* hide items in laptop */
-#tablet{
+#tablet {
     display: none;
 }
-#about_tablet{
+
+#about_tablet {
     display: none;
 }
+
+#signup span {
+    position: relative;
+    /* bottom: 200px; */
+}
+
+#signup>button:hover+#signinmaterials {
+    display: block;
+    /* position: fixed; */
+}
+
+#signinmaterials {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    display: none;
+    width: 300px;
+    height: 200px;
+    /* border: 20px solid green; */
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+#signinmaterials>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#signinmaterials>div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#signinmaterials a {
+    color: black;
+    font-size: larger;
+}
+
 
 /* For Tablet */
 
-@media screen and (min-width:768px) and (max-width:1024px){
-  #hide{
-      display: none;
+@media screen and (min-width:768px) and (max-width:1024px) {
+    #hide {
+        display: none;
     }
-    #about_tablet{
+
+    #about_tablet {
         display: block;
         justify-content: flex-start;
         position: relative;
         top: -320px;
     }
-    #about_tablet>ul{
-   
-    }
-    #about_tablet>ul>div:first-child>a{
+
+    #about_tablet>ul {}
+
+    #about_tablet>ul>div:first-child>a {
         color: black;
     }
-    #flags{
+
+    #flags {
         align-items: center;
         justify-content: flex-start;
         gap: 25px;
     }
-#inner_img2{
-    width: 600px;
-}
-    #logos{
+
+    #inner_img2 {
+        width: 600px;
+    }
+
+    #logos {
         /* justify-content: space-around; */
         display: flex;
         justify-content: space-around;
@@ -249,19 +298,24 @@ footer {
         /* border: 2px solid red; */
         padding-left: 0px;
     }
+
     #inner_btn>button:first-child {
-        left:130px;
+        left: 130px;
     }
-    #inner_btn>button:last-child{
+
+    #inner_btn>button:last-child {
         left: 190px;
     }
-    #inner_img>p:first-child{
+
+    #inner_img>p:first-child {
         left: -80px;
     }
-    #inner_img>p:last-child{
+
+    #inner_img>p:last-child {
         left: -70px;
     }
-    #tablet{
+
+    #tablet {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -269,7 +323,8 @@ footer {
         color: white;
         /* height: 50px; */
     }
-    #tablet span{
+
+    #tablet span {
         color: black;
         font-weight: 290;
         font-size: 30px;
@@ -278,27 +333,32 @@ footer {
         padding-right: 5px;
         /* gap: 215px; */
     }
-#tablet>h3{
-    font-size: 40px;
-    /* border: 2px solid green; */
-}
-#tablet>#search>span{
-    /* border: 15px solid blue; */
-    color: black;
-    /* height: 20px; */
-    position: relative;
-    top: 0px;
-    left: -30px;
-}
-    #content>img{
-        width:700px;
+
+    #tablet>h3 {
+        font-size: 40px;
+        /* border: 2px solid green; */
+    }
+
+    #tablet>#search>span {
+        /* border: 15px solid blue; */
+        color: black;
+        /* height: 20px; */
+        position: relative;
+        top: 0px;
+        left: -30px;
+    }
+
+    #content>img {
+        width: 700px;
         height: 600px;
     }
+
     /* hidden */
-    header{
+    header {
         display: none;
     }
-    nav{
+
+    nav {
         display: none;
     }
 }
@@ -308,12 +368,14 @@ footer {
 /* for mobile phone */
 
 
-@media screen and (min-width:200px) and (max-width:764px){
+@media screen and (min-width:200px) and (max-width:764px) {
+
     /* hidden */
-    header{
+    header {
         display: none;
     }
-    nav{
+
+    nav {
         display: none;
     }
 }
